@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/MoneyMetrics/static/css/main.5a652e02.css",
-    "main.js": "/MoneyMetrics/static/js/main.57f4f35f.js",
+    "main.js": "/MoneyMetrics/static/js/main.f633cbcb.js",
     "index.html": "/MoneyMetrics/index.html",
     "main.5a652e02.css.map": "/MoneyMetrics/static/css/main.5a652e02.css.map",
-    "main.57f4f35f.js.map": "/MoneyMetrics/static/js/main.57f4f35f.js.map"
+    "main.f633cbcb.js.map": "/MoneyMetrics/static/js/main.f633cbcb.js.map"
   },
   "entrypoints": [
     "static/css/main.5a652e02.css",
-    "static/js/main.57f4f35f.js"
+    "static/js/main.f633cbcb.js"
   ]
 }
