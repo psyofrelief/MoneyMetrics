@@ -1,0 +1,151 @@
+.navbar {
+}
+.title {
+  padding: 0.5em;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.title > span {
+  color: #7209b7;
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0.4em 0;
+}
+
+/* <ul> */
+.navbar-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  padding: 1em 0;
+}
+
+.navbar-menu {
+  position: relative;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.navbar-menu > svg {
+  font-size: 1.5rem;
+  color: gray;
+  margin: 0 0 0 0.5em;
+}
+
+.dropdown {
+  background-color: whitesmoke;
+  position: absolute;
+  top: 200%;
+  left: 10px;
+  right: 10px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5em;
+  animation: dropdown 100ms ease-out;
+  z-index: 1;
+  text-align: start;
+}
+
+.dropdown-item {
+  list-style: none;
+  padding: 1em 0;
+}
+
+.dropdown-item > a {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes dropdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateY(-25px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pageLoad {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.BMI {
+}
+
+svg {
+  margin: 0.7em;
+  cursor: pointer;
+}
+
+.hamburger {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  display: none;
+}
+
+.tabs {
+  min-width: 100vw;
+}
+
+.hamburger-tab {
+  padding: 0.5em;
+  background-color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  animation: dropdown 100ms ease-in-out;
+}
+
+.hamburger-links {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  outline: 1px solid;
+}
+
+.hamburger-link {
+  padding: 1em;
+  border: 1px solid;
+  font-size: 1rem;
+  font-weight: 400;
+}

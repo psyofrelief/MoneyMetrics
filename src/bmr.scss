@@ -1,0 +1,51 @@
+.bmr-conversion {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .cont-age {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      margin-top: 0.5em;
+      max-width: 200px;
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 0.3em 0;
+      border: 3px solid #8338ec;
+    }
+  }
+
+  .cont-sex {
+    border: 2px solid black;
+    display: grid;
+    row-gap: 2px;
+    background-color: black;
+
+    button {
+      padding: 0.3em 0;
+      font-size: 1.3rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      background-color: black;
+      color: white;
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+
+    .highlight {
+      cursor: default;
+      background-color: #8338ec;
+      color: white;
+      &:hover {
+        background-color: #8338ec;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Poppins", monospace;
+  background-color: white;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  padding: 1em;
+}
+h2 {
+  margin-bottom: 2em;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+label {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: 0.5em 0;
+}
+.cont-height,
+.cont-weight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  input {
+    max-width: 200px;
+    font-size: 1.5rem;
+    border: 3px solid #8338ec;
+    text-align: center;
+    padding: 0.3em 0;
+  }
+}
+
+.cont-height-metric-imperial,
+.cont-weight-metric-imperial {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px solid black;
+  margin-top: 0.5em;
+  .highlight {
+    background-color: #8338ec;
+    cursor: default;
+    color: white;
+    &:hover {
+      background-color: #8338ec;
+      color: white;
+    }
+  }
+
+  button {
+    background-color: black;
+    color: white;
+    padding: 0.5em 0.7em;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+}
+.unit-conversion {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    margin-bottom: 2em;
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+}
+
+.converter {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+  }
+}
+
+.cont-unit-input {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+
+  svg {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 0.7em 0.9em;
+    font-size: 1.4rem;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+  }
+}
+
+.cont-conversion-amount {
+  display: flex;
+  justify-content: center;
+  input {
+    padding: 0.3em 0;
+    text-align: center;
+    max-width: 200px;
+    font-size: 1.5rem;
+    border: 3px solid #8338ec;
+    margin: 1em 0;
+  }
+}
+/* Currency Converter */
+.converter-currency {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+  }
+
+  h2 {
+    margin-bottom: 2em;
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+
+  label {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 0.4em;
+  }
+
+  .cont-amount-input {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      max-width: 200px;
+      font-size: 1.5rem;
+      border: 3px solid #8338ec;
+      text-align: center;
+      padding: 0.3em 0;
+    }
+  }
+}
+
+/* Currency Inputs */
+.cont-conversion-money {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  justify-content: center;
+
+  input {
+    font-size: 1.4rem;
+    padding: 0.3em 0;
+    font-size: 1.5rem;
+    margin: 1em 0;
+    text-align: center;
+    border: 2px solid black;
+  }
+  svg {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cont-conversion-money {
+    display: flex;
+    flex-direction: column;
+    input {
+      max-width: 300px;
+    }
+  }
+}
+
+/* */
+
+.btn-convert,
+.btn-calculate {
+  font-size: 1.3rem;
+  padding: 0.7em 0.9em;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #b8bedd;
+    color: black;
+  }
+}
+
+.description {
+  border: 1px solid black;
+  padding: 1em;
+  background-color: whitesmoke;
+  border-top: none;
+}
+
+.paragraph {
+  font-weight: 500;
+}
+
+.modal {
+  border: 2px solid gray;
+  background-color: white;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  position: relative;
+  font-size: 2.4rem;
+  padding: 2em 0;
+  text-align: center;
+  letter-spacing: 0.2ch;
+  font-weight: 600;
+  margin-top: 1em;
+
+  .close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+}
+.cont-currency-btns {
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: black;
+  gap: 1px;
+  .currency {
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  .highlight {
+    background-color: #8338ec;
+    cursor: default;
+    &:hover {
+      background-color: #8338ec;
+      color: white;
+    }
+  }
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  min-width: 100%;
+  align-self: center;
+}
